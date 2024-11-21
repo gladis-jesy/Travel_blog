@@ -15,6 +15,11 @@ import { RecentPostComponent } from './home-page/recent-post/recent-post.compone
 import { NewsletterComponent } from './home-page/newsletter/newsletter.component';
 import { FooterComponent } from './home-page/footer/footer.component';
 import { BlogVideosComponent } from './home-page/blog-videos/blog-videos.component';
+import { AboutMeComponent } from './home-page/recent-post/about-me/about-me.component';
+import { SocialInfoComponent } from './home-page/recent-post/social-info/social-info.component';
+import { InstaPostComponent } from './home-page/recent-post/insta-post/insta-post.component';
+import { SearchComponent } from './home-page/recent-post/search/search.component';
+import { DetailViewComponent } from './home-page/places-vist/detail-view/detail-view.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +34,12 @@ import { BlogVideosComponent } from './home-page/blog-videos/blog-videos.compone
     RecentPostComponent,
     NewsletterComponent,
     FooterComponent,
-    BlogVideosComponent
+    BlogVideosComponent,
+    AboutMeComponent,
+    SocialInfoComponent,
+    InstaPostComponent,
+    SearchComponent,
+    DetailViewComponent
   ],
   imports: [
     BrowserModule,
