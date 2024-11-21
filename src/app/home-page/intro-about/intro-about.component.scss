@@ -1,3 +1,7 @@
 .border-t {
     border-top: 4px solid #c3bfbf; 
 }
+.slick-prev, .slick-next {
+    z-index: 1; /* Make sure they are on top of the carousel */
+    display: block; /* Ensure they are visible */
+}

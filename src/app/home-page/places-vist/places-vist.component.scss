@@ -1,0 +1,30 @@
+.carousel {
+    .slick-slide {
+      margin: 0 10px; /* Adjust space between slides */
+    }
+  
+    img {
+      width: 100%; /* Make images responsive */
+      display: block;
+    }
+  }
+  
+
+  .slick-next, .slick-prev {
+    background-color: #ffa500; /* Orange background color */
+    color: white;              /* Text color */
+    border: none;              /* Remove border */
+    padding: 10px 20px;        /* Adjust padding */
+    border-radius: 5px;        /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+}
+
+.slick-next:hover, .slick-prev:hover {
+    background-color: #cc8400; /* Darker orange on hover */
+}
+
+/* Optional: Style the disabled state */
+.slick-next.slick-disabled, .slick-prev.slick-disabled {
+    background-color: #cccccc; /* Gray out the button when disabled */
+    cursor: not-allowed;       /* Show "not-allowed" cursor when disabled */
+}
