@@ -5,6 +5,8 @@ const app = express();
 const cors = require('cors');
 const path = require('path')
 const multer = require('multer')
+// To handle images from filesystem
+const fs = require('fs')
 // set up middleware
 
 // Parse incoming Json
@@ -138,4 +140,21 @@ app.delete('/api/Travel_blog', (req, res) => {
     } else {
         res.status(400).json({ error: '400 bad request' })
     }
+})
+
+app.get('/api/image', (req, res) => {
+    const imageName = req.query.name; // Get filename from query
+
+    if (!imageName) {
+        return res.status(400).send('Filename is required');
+    }
+
+    const imagePath = path.join(__dirname, "upload/images", imageName);
+
+    if (!fs.exists(imagePath)) {
+        return res.status(400).send('Image not found');
+    }
+
+    res.setHeader('Content-Type', 'image/jpeg');
+    res.sendFile(imagePath);
 })
