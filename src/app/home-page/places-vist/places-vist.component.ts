@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class PlacesVistComponent {
   slideConfig = {
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    autoplay: false,
-    autoplaySpeed: 3000,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 2000,
     nextArrow: '<button type="button" class="slick-next">Next</button>',
     prevArrow: '<button type="button" class="slick-prev">Previous</button>',
     responsive: [

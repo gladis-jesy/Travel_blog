@@ -14,6 +14,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { RecentPostComponent } from './home-page/recent-post/recent-post.component';
 import { NewsletterComponent } from './home-page/newsletter/newsletter.component';
 import { FooterComponent } from './home-page/footer/footer.component';
+import { BlogVideosComponent } from './home-page/blog-videos/blog-videos.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FooterComponent } from './home-page/footer/footer.component';
     PlacesVistComponent,
     RecentPostComponent,
     NewsletterComponent,
-    FooterComponent
+    FooterComponent,
+    BlogVideosComponent
   ],
   imports: [
     BrowserModule,
