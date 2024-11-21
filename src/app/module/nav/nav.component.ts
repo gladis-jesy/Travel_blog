@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
 
+  navList = ['Home', 'Destinations', 'Blog', 'About Me', 'Contact']
+  selectNavigation = 'Home'
+  activeNavigation(getNav: any) {
+    this.selectNavigation = getNav
+  }
+
 }
