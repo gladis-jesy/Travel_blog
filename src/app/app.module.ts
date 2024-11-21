@@ -21,6 +21,7 @@ import { SearchComponent } from './module/home-page/recent-post/search/search.co
 import { DetailViewComponent } from './module/home-page/places-vist/detail-view/detail-view.component';
 import { QuestionAskComponent } from './module/home-page/question-ask/question-ask.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     BrowserModule,
     AppRoutingModule,
     SlickCarouselModule,
+    HttpClientModule,
 
   ],
   providers: [],
