@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./recent-post.component.scss']
 })
 export class RecentPostComponent {
+onShowModel:boolean=false;
+
+  onOpenUpload() {
+    this.onShowModel = true
+  }
+
+  getClosePoupValue(val:any){
+    this.onShowModel = val
+  }
 
 }

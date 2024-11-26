@@ -1,6 +1,13 @@
 <div class="flex justify-center w-full px-24 pb-24">
     <div class="w-3/4 px-10">
+       <div class="flex justify-between">
         <p>RECENT POSTS</p>
+        <span (click)="onOpenUpload()" class="border-white w-7 h-7 flex items-center justify-center bg-white rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+            </svg>
+          </span>
+       </div> 
         <hr class="border-2 border-gray-300 my-4">
         <div class="flex flex-col gap-6">
             <div class="flex pt-2 gap-6 ">
@@ -105,3 +112,8 @@
        <app-search></app-search>
         </div>
     </div>
+
+
+    <app-model-popup *ngIf="onShowModel">
+        <app-new-upload-post (closepopup)="getClosePoupValue($event)"></app-new-upload-post>
+    </app-model-popup>

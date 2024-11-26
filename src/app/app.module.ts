@@ -22,6 +22,9 @@ import { DetailViewComponent } from './module/home-page/places-vist/detail-view/
 import { QuestionAskComponent } from './module/home-page/question-ask/question-ask.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { ModelPopupComponent } from './shared/component/model/model-popup/model-popup.component';
+import { NewUploadPostComponent } from './module/home-page/recent-post/new-upload-post/new-upload-post.component';
+import { LoginDetailsComponent } from './module/home-page/login-details/login-details.component';
 
 
 @NgModule({
@@ -43,7 +46,10 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     InstaPostComponent,
     SearchComponent,
     DetailViewComponent,
-    QuestionAskComponent
+    QuestionAskComponent,
+    ModelPopupComponent,
+    NewUploadPostComponent,
+    LoginDetailsComponent
   ],
   imports: [
     BrowserModule,
